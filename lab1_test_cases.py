@@ -28,7 +28,7 @@ class TestLab1(unittest.TestCase):
         self.assertEqual(bin_search(4, 3, 2, list_val), None)
         tlist = None
         with self.assertRaises(ValueError):  # used to check for exception
-            max_list_iter(tlist)
+           bin_search(4, 0, 5, tlist)
 if __name__ == "__main__":
         unittest.main()
 
