@@ -24,7 +24,8 @@ class TestLab1(unittest.TestCase):
         list_val =[0,1,2,3,4,7,8,9,10]
         low = 0
         high = len(list_val)-1
-        self.assertEqual(bin_search(4, 0, len(list_val)-1, list_val), 4 )
+        self.assertEqual(bin_search(3, 0, len(list_val)-1, list_val), 3 )
+        self.assertEqual(bin_search(7, 0, len(list_val)-1, list_val), 5)
         self.assertEqual(bin_search(4, 3, 2, list_val), None)
         tlist = None
         with self.assertRaises(ValueError):  # used to check for exception

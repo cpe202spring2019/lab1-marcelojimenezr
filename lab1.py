@@ -40,4 +40,3 @@ def bin_search(target, low, high, int_list):  # must use recursion
    	return bin_search(target, low, mid - 1, int_list)
    else: return bin_search(target, mid + 1, high, int_list)
 
-print(max_list_iter([1,2,5,67]))
